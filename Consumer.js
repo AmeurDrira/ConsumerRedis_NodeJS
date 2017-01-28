@@ -7,7 +7,7 @@ var time = require('time');
 
 var config = {
     port: 6379,
-    host: 'soitech.cloudapp.net',
+    host: 'localhost',
     auth: 'iot2016'
 };
 var nrp = new NRP(config);
