@@ -7,7 +7,7 @@ var time = require('time');
 
 var config = {
     port: 6379,
-    host: 'localhost',
+    host: '10.0.0.4',
     auth: 'iot2016'
 };
 var nrp = new NRP(config);
