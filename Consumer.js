@@ -7,12 +7,12 @@ var time = require('time');
 
 var config = {
     port: 6379,
-    host: '10.0.0.4',
+    host: 'soitech.cloudapp.net',
     auth: 'iot2016'
 };
 var nrp = new NRP(config);
 
-nrp.on('Downlink', function (data) {
+nrp.on('Uplink', function (data) {
 
     b = new time.Date();
     console.log(b.toString() + "Downlink msg : " + JSON.stringify(data));
